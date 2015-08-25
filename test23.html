@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="chedekun@gmail.com">
+	<meta name="description" content="Web Design Study and Test">
+	<meta name="keywords" content="Web development tools study">
+	<title>test23-javascript-改变HMTL图片内容</title>
+	<script>
+    function changeImage()
+    {
+      element=document.getElementById('myimage')
+      if (element.src.match("bulbon"))
+        {
+          element.src="/i/eg_bulboff.gif";
+        }
+      else
+          {
+            element.src="/i/eg_bulbon.gif";
+          }
+        }
+    </script>
+<body>
+
+<img id="myimage" onclick="changeImage()" src="/i/eg_bulboff.gif">
+
+<p>点击灯泡来点亮或熄灭这盏灯</p>
+
+</body>
+</html>
